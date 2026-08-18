@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use Paper Deep Reader in research or teaching, cite this repository."
+title: "Paper Deep Reader"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Junxi
+version: 0.1.0
+date-released: 2026-08-18
+license: MIT
+repository-code: "https://github.com/Jeff-45-CLE/paper-deep-reader"
+keywords:
+  - academic papers
+  - literature review
+  - research notes
+  - AI skill
+  - Feishu

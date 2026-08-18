@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a new paper type, template, rule, or evaluation case.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Research use case
+      description: Explain the paper-reading problem this feature solves.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Example or evidence
+      description: Add a sample paper type, output, or failure case.

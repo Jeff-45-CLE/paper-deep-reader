@@ -1,0 +1,267 @@
+{
+  "version": "0.1.0",
+  "required_sections": [
+    {
+      "id": "paper-info",
+      "alternatives": [
+        "论文信息",
+        "Paper Information"
+      ]
+    },
+    {
+      "id": "problem",
+      "alternatives": [
+        "场景、问题与核心思路",
+        "Scenario, Problem, and Core Idea"
+      ]
+    },
+    {
+      "id": "terms",
+      "alternatives": [
+        "关键术语与符号",
+        "Key Concepts, Terminology, and Notation"
+      ]
+    },
+    {
+      "id": "method",
+      "alternatives": [
+        "方法与算法流程",
+        "Method and Algorithm Flow"
+      ]
+    },
+    {
+      "id": "example",
+      "alternatives": [
+        "构造实例",
+        "Constructed Worked Example"
+      ]
+    },
+    {
+      "id": "experiments",
+      "alternatives": [
+        "实验设置与结果",
+        "Experimental Setup and Results"
+      ]
+    },
+    {
+      "id": "claim-evidence",
+      "alternatives": [
+        "Claim-Evidence"
+      ]
+    },
+    {
+      "id": "limitations",
+      "alternatives": [
+        "贡献、优势与边界",
+        "Contributions, Strengths, and Boundaries"
+      ]
+    }
+  ],
+  "removed_sections": [
+    {
+      "id": "what-to-remember",
+      "patterns": [
+        "What to Remember",
+        "需要记住",
+        "核心记忆点",
+        "记忆清单"
+      ]
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "cn-not-but",
+      "regex": "不是[^。！？\\n]{0,120}而是",
+      "message": "使用两个直接陈述替代对立模板句式。"
+    },
+    {
+      "id": "cn-not-only",
+      "regex": "不仅[^。！？\\n]{0,120}(而且|还|更)",
+      "message": "拆分并列信息，删除机械递进结构。"
+    },
+    {
+      "id": "cn-worth-noting",
+      "regex": "值得注意的是",
+      "message": "直接陈述事实并给出证据位置。"
+    },
+    {
+      "id": "cn-need-point-out",
+      "regex": "需要指出的是",
+      "message": "直接写结论或限制。"
+    },
+    {
+      "id": "cn-in-summary",
+      "regex": "综上所述",
+      "message": "删除通用总结引导语。"
+    },
+    {
+      "id": "cn-overall",
+      "regex": "总的来说",
+      "message": "用具体结论替代概括性开头。"
+    },
+    {
+      "id": "cn-development",
+      "regex": "随着[^。！？\\n]{0,80}(不断|快速|迅速)?发展",
+      "message": "删除通用背景铺垫，直接进入研究场景。"
+    },
+    {
+      "id": "cn-modern-context",
+      "regex": "在当今[^。！？\\n]{0,60}(背景|时代|环境)下",
+      "message": "删除泛化背景句。"
+    },
+    {
+      "id": "cn-new-idea",
+      "regex": "为[^。！？\\n]{0,100}提供了新的(思路|视角|方向)",
+      "message": "说明具体可迁移机制。"
+    },
+    {
+      "id": "cn-important",
+      "regex": "具有(十分|非常|极其)?重要(的)?意义",
+      "message": "说明具体影响或可验证价值。"
+    },
+    {
+      "id": "cn-potential",
+      "regex": "展现出[^。！？\\n]{0,60}(巨大|广阔)(的)?潜力",
+      "message": "删除宣传性判断。"
+    },
+    {
+      "id": "cn-obvious",
+      "regex": "(显而易见|不难发现|毋庸置疑|毫无疑问)",
+      "message": "给出证据，避免预设读者结论。"
+    },
+    {
+      "id": "cn-essentially",
+      "regex": "从本质上(讲|说)",
+      "message": "直接给出定义或机制。"
+    },
+    {
+      "id": "cn-ultimately",
+      "regex": "归根结底",
+      "message": "直接陈述最终结论。"
+    },
+    {
+      "id": "cn-undoubtedly",
+      "regex": "这无疑",
+      "message": "删除无证据强调。"
+    },
+    {
+      "id": "en-not-but",
+      "regex": "(?i)\\bnot\\b[^.!?\\n]{0,100}\\bbut\\b",
+      "message": "Split the contrast into direct factual sentences."
+    },
+    {
+      "id": "en-worth-noting",
+      "regex": "(?i)\\bit is worth noting that\\b",
+      "message": "State the fact and evidence directly."
+    },
+    {
+      "id": "en-should-note",
+      "regex": "(?i)\\bit should be noted that\\b",
+      "message": "State the limitation or result directly."
+    },
+    {
+      "id": "en-rapidly-evolving",
+      "regex": "(?i)\\bin today['’]s rapidly evolving\\b",
+      "message": "Remove generic background prose."
+    },
+    {
+      "id": "en-conclusion",
+      "regex": "(?i)\\bin conclusion\\b",
+      "message": "Use a specific evidence-based closing statement."
+    },
+    {
+      "id": "en-overall-clear",
+      "regex": "(?i)\\boverall,? it is clear that\\b",
+      "message": "Use a concrete supported conclusion."
+    },
+    {
+      "id": "en-new-perspective",
+      "regex": "(?i)\\bprovides? a novel perspective\\b",
+      "message": "Name the exact transferable mechanism."
+    },
+    {
+      "id": "en-new-avenues",
+      "regex": "(?i)\\bopens? up new avenues?\\b",
+      "message": "Name the exact research direction."
+    }
+  ],
+  "discouraged_patterns": [
+    {
+      "id": "cn-can-see",
+      "regex": "可以看出",
+      "max_count": 1,
+      "message": "Repeated generic inference phrase."
+    },
+    {
+      "id": "cn-means",
+      "regex": "这意味着",
+      "max_count": 1,
+      "message": "Repeated transition."
+    },
+    {
+      "id": "cn-in-other-words",
+      "regex": "换句话说",
+      "max_count": 1,
+      "message": "Repeated rephrasing transition."
+    },
+    {
+      "id": "en-in-other-words",
+      "regex": "(?i)\\bin other words\\b",
+      "max_count": 1,
+      "message": "Repeated rephrasing transition."
+    },
+    {
+      "id": "en-this-means",
+      "regex": "(?i)\\bthis means that\\b",
+      "max_count": 1,
+      "message": "Repeated transition."
+    },
+    {
+      "id": "en-overall",
+      "regex": "(?i)\\boverall\\b",
+      "max_count": 1,
+      "message": "Repeated overview transition."
+    }
+  ],
+  "vague_claim_patterns": [
+    {
+      "id": "cn-significant-gain",
+      "regex": "(显著|大幅|明显)(提升|提高|改善|优于)",
+      "message": "Add an exact numerical difference or statistical test."
+    },
+    {
+      "id": "cn-vague-quality",
+      "regex": "(先进|强大|优秀|卓越)(的)?(方法|模型|性能|能力)",
+      "message": "Replace promotional wording with a measurable property."
+    },
+    {
+      "id": "en-significant",
+      "regex": "(?i)\\bsignificant(?:ly)?\\s+(?:improv\\w*|gain\\w*|increase\\w*|decrease\\w*|outperform\\w*|better|higher|lower|effect\\w*)\\b",
+      "message": "Confirm that a statistical test or exact evidence supports this wording."
+    },
+    {
+      "id": "en-clearly",
+      "regex": "(?i)\\b(clearly|obviously)\\b",
+      "message": "Provide evidence and remove assumed certainty."
+    },
+    {
+      "id": "en-robust",
+      "regex": "(?i)\\b(robust|generalizable|state[- ]of[- ]the[- ]art)\\b",
+      "message": "Provide the exact evaluation that supports this claim."
+    }
+  ],
+  "placeholder_patterns": [
+    "\\[论文标题\\]",
+    "\\[Paper Title\\]",
+    "\\[Term[^\\]]*\\]",
+    "\\[名称\\]",
+    "\\[Name\\]",
+    "\\bTODO\\b",
+    "\\bTBD\\b",
+    "\\.\\.\\."
+  ],
+  "evidence_anchor_regex": "(Sec\\.|Section|Eq\\.|Equation|Fig\\.|Figure|Table|Algorithm|Appendix|第\\s*\\d+\\s*节|图\\s*\\d+|表\\s*\\d+|公式\\s*\\(?\\d+)",
+  "max_chinese_sentence_chars": 90,
+  "max_english_sentence_words": 35,
+  "max_paragraph_chars": 450
+}
