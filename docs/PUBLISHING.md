@@ -3,7 +3,7 @@
 ## Before the first public release
 
 - [ ] Choose the final repository name.
-- [ ] Confirm the repository URL in `CITATION.cff`.
+- [ ] Replace `YOUR_USERNAME` in `CITATION.cff`.
 - [ ] Confirm the author name and license year.
 - [ ] Read the synthetic example and verify every value is labeled as constructed.
 - [ ] Run `python -m unittest discover -s tests`.

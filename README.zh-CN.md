@@ -116,12 +116,6 @@ python scripts/validate_note.py path/to/note.md
 python scripts/validate_note.py path/to/note.md --json
 ```
 
-在自动化质量检查中，可将警告视为失败：
-
-```bash
-python scripts/validate_note.py path/to/note.md --fail-on-warning
-```
-
 ## 示例与评测
 
 `examples/toy-paper/` 提供一份虚构论文摘要和对应的中文深度笔记，用于展示完整输出结构。该示例中的论文、数据和结果均为构造内容。
